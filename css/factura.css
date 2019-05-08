@@ -1,0 +1,36 @@
+body{
+    /* color de fondo*/
+background-color: rgb(242, 242, 242);
+/* color de texto*/
+color: #707070;
+/* tipografia, tipo*/
+font-family: Arial, sans-serif;
+/* tipografia, tamaño*/
+font-size: 16px;
+/*margen superior*/
+margin-top: 35px;
+display: flex;
+justify-content: center;
+padding:  2vw;
+width: 12.500em;
+}
+
+section {
+
+  
+    flex-direction: row;
+
+}
+
+.ContenedorPrincipal {
+
+    display: flex;
+    
+    
+  
+}
+
+
+
+
+

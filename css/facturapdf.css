@@ -1,0 +1,21 @@
+header{
+
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-between; /* Esto nos permite que halla un espacio entre los contenidos */
+    
+    background-color: gray;
+
+
+}
+
+
+article{
+/* los anchos no existe, para eso usamos flex-grow para que cada contenido coja una porcion de la pag web y que se ponga flexible cuando se cambie el tamaño de la pag. web. Ademas el flex-grow segun que a que contenido se lo pongamos, y le ponemos 1, este va a coger el espacio sobrante, si disminuimos o aumentamos le estamos indicando que si coje mas espacio sobrante o no */
+    flex-grow: 1;
+}
+
+article .datos {
+
+    flex-grow: 0.5;
+}
