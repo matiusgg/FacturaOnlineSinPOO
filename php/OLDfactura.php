@@ -1,6 +1,6 @@
 <?php
 
-
+// EXPLICACION ANTERIOR, VALE LA PENA LEERLO, PARA ENTERNDER MEJOR
 // Este archivo servira para poder explicar todo el funcionamiento del proyecto FACTURA. ESta es el archivo viejo de factura.php
 // Queremos que los datos del indexfactura que introduzcamos  vayan a algun lugar, tiene que haber algun archivo donde se recompilen, el cual seria este.
 
@@ -23,13 +23,13 @@
 
 // La funcion es parametrizada, es decir podemos volver a usarla de una forma mas optima en otros archivos
 
-include_once('datosfactura.php');
-include_once('funcionesfactura.php');
+ //include_once('datosfactura.php');
+ // include_once('funcionesfactura.php');
 
 //Subtotal de la factura
 // Ahora aqui llamamos la funcion subtotal, y como lo optimizamos y ahora hay un parametro dentro de la funcion $precioarray
 
-echo('Subtotal = ' . subtotal($precios));
+ //echo('Subtotal = ' . subtotal($precios));
 
 // IRPF
 //IVA

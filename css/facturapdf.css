@@ -9,13 +9,42 @@ header{
 
 }
 
+section .filas  {
 
-article{
+
+    display: flex;
+    justify-content: space-around;
+    
+    
+    }
+
+article .filas_titulos{
 /* los anchos no existe, para eso usamos flex-grow para que cada contenido coja una porcion de la pag web y que se ponga flexible cuando se cambie el tamaño de la pag. web. Ademas el flex-grow segun que a que contenido se lo pongamos, y le ponemos 1, este va a coger el espacio sobrante, si disminuimos o aumentamos le estamos indicando que si coje mas espacio sobrante o no */
     flex-grow: 1;
 }
 
-article .datos {
+article .filas_datos span {
 
-    flex-grow: 0.5;
+    flex-grow: 0.3;
+    justify-content: space-around;
 }
+
+
+
+
+
+section .filas article span{
+
+    flex-grow: 1; /* Aqui es para que cada span se ponga flexbile y se pongan por cada lago*/
+
+    }
+/* el nth-child te permite escoger el 'hijo' de una determinada etiqueta */
+    section .filas article span:nth-child(1){
+
+        flex-grow: 5; /* Esto nos permite que le 1 span ocupe mas espacio */
+    
+        }
+
+
+    
+

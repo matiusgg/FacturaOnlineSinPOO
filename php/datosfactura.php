@@ -39,11 +39,22 @@ for($i=0; $i < 5; $i++){
                     
                      }
 
-            
+                     // Ahora lo que hay que hacer es que supongamos que el cliente no pone un valor/dato para que se realice la funcion, entonces nos dara un gra problema porque puso un valor que no tiene del otro valor para quer nos de el rusltado. Para ello podemos ponerle una condicion mas con else, para que le digamos que si pasa esto no nos lo deje vacio y ponga NULL. Ponemos un array_push porque obviamente queremos que el resultado de la condicion se meta dentro del array de este archivo.
+
+                     // No podemos poner un string en 'NULL' porque en este caso la operacion de la funcion va con numeros con con strings, por lo cual al momento de hacer operacion te va a fallar porque le pusiste un string. Pondriamos en este caso NULL porque NULL ya esta predeterminado en el lenguaje PHP
+
+            else {
+
+                // como vemos 1 se pone el array al que vamos a introducir la informacion, y lo que queremos
+
+                array_push($precios, NULL);
+            }
+
+            }
 
 
             // El array_push lo que te permite es poner datos dentro de un array
-        };
+        
 
 
            // el print_r aqui te permite mostrar el contenido de un array, es mas comodo que en el echo por el tema del array

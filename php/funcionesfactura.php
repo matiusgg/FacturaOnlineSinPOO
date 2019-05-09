@@ -1,6 +1,8 @@
 <?php
 
 
+// PARAMETRO: Bospermite recopilar datos que le demos para que nos realice las operaciones de la funcion
+
 // Calcular el precio
 // sumar precio * cantidad - descuento 
 
@@ -43,7 +45,7 @@ function subtotal ($array) {
         // si queremos que al hacer el bucle e ir por cada subarray, entonces lo que queremos es que sume el anterior subarray con el actual array, para ello necesitamos crear una variable donde nos quede claro que queremos sumar esta variable( que aun no vale nada) con $valor, para que cuando vuelva hacer el bucle, ya esta nueva variable tiene el valor de $valor, y asi sucesivamente
 
     $Sumavalor += $valor;
-   var_dump($Sumavalor);
+   // var_dump($Sumavalor);
 
     // $forache ya hace el trabajo de contador, por lo cual no es necesario un $i++
 
@@ -66,8 +68,8 @@ return $Sumavalor;
 // el subtotal es: Sale de la suma de la funcion precio por cada fila, que es lo que hicimos en la funcion subtotal
 function irpf($subtotal, $irpf = 0.10){
     $porcentaje = $subtotal * $irpf;
-    $solucion = $subtotal - $porcentaje;
-    return $subtotal;
+    // $solucion = $subtotal - $porcentaje;
+    return $porcentaje;
     }
  
  
@@ -75,27 +77,30 @@ function irpf($subtotal, $irpf = 0.10){
  //Multiplicar el subtotal * 0.21 y sumar al sodium_crypto_box_keypair_from_secretkey_and_publickey
  function iva($subtotal, $iva = 0.21){ // cuando le ponemos el valor a un parametro nos permite que cada vez que haga la operacion, lo haga con el valor que le pusimos al parametro obviamente, esto  es mejor que asignarle un valor desde dentro y no estableciendo el valor fijo
  $porcentaje = $subtotal * $iva;
- $solucion = $subtotal + $porcentaje;
- return $solucion;
+
+ // pusimos en comentarios esto porque no necesitamos que nos haga una operacion final, solo que nos muestre el dato final
+   // $solucion = $subtotal + $porcentaje;
+ return $porcentaje;
  }
 
  // Total factura
  // suma de todas las filas = subtotal
  // subtotal - irpf + iva = Total factura
 
- function totalfactura() {
+ function totalfactura($array) {
 
+    // Aca le colocamos el parametro $array a esta funcion para que recopile los datos de las funciones anteriores por eso si queremos que se recopilen este nuevo nuevo parametro debe llamarse igual que los parametros de las funciones para que se recopilen
 // como necesitamos la informacion anterior para hacer las operaciones, simplemente para no repetir de nuevo todo, llamamos a las demas funciones que hemos hecho
 
 // Llamamos las funciones dentro de nuevas variables para definirlas, esto para en $solucion nos viene bien
 
- $subtotal = subtotal(); // ejm: Si subtotal son 100euros
+ $subtotal = subtotal($array); // Ahora como hemos actualizado y ahora la funcion tiene un nuevo parametro $array, por lo cual es importante que siempre pongamos los parametros que necesitemos// ejm: Si subtotal son 100euros
  // Asi llamamos a una funcion, por su nombre y () , dentro de () irian los parametros, si los hay se ponen, si no, pues no.
- $irpf = irpf(subtotal(), $irpf);  // 100euros - 10(irpf/porcentaje)
+ $irpf = irpf($subtotal); // $irpf); Aqui no hemos llamado al parametro porque ya lo hemos definido en su funcion respectivamente  // 100euros - 10(irpf/porcentaje)
  // como vemos la funcion irpf tiene como parametro la funcion subtotal, por lo cual como anteriormente ya la definimos en esta nueva funcion, entonces podemos colocarlo
- $iva = iva(subtotal(), $iva); // 100euros + 20(iva/porcentaje)
+ $iva = iva($subtotal);// $iva); // 100euros + 20(iva/porcentaje)
 
- $solucion = $subtotal - $irpf + $iva;
+  $solucion = $subtotal - $irpf + $iva;
 
  return $solucion;
 

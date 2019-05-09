@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/factura.css">
     <link rel="stylesheet" href="css/resetfactura.css">
+    <link rel="stylesheet" href="css/factura.css">
     <title>Document</title>
 </head>
 <body>
@@ -201,15 +201,15 @@ Datos Factura
 <label for="text">
 Descripcion
 </label>
-<input type="text" name="descripcion" id="descripcion" autofocus='autofocus' >
+<input type="text" name="descripcion00" id="descripcion00" autofocus='autofocus' >
 
-<input type="text" name="descripcion2" id="descripcion2" >
+<input type="text" name="descripcion01" id="descripcion1" >
 
-<input type="text" name="descripcion3" id="descripcion3" >
+<input type="text" name="descripcion02" id="descripcion2" >
 
-<input type="text" name="descripcion4" id="descripcion4" >
+<input type="text" name="descripcion03" id="descripcion3" >
 
-<input type="text" name="descripcion5" id="descripcion5" >
+<input type="text" name="descripcion04" id="descripcion4" >
 
 
 <!--  -->
@@ -217,30 +217,30 @@ Descripcion
 <label for="text">
 Precio Base
 </label>
-<input type="number" name="preciobase00" id="preciobase" autofocus='autofocus' required>
+<input type="number" name="preciobase00" id="preciobase00" autofocus='autofocus' >
 
-<input type="number" name="preciobase01" id="preciobase2" >
+<input type="number" name="preciobase01" id="preciobase1" >
 
-<input type="number" name="preciobase02" id="preciobase3" >
+<input type="number" name="preciobase02" id="preciobase2" >
 
-<input type="number" name="preciobase03" id="preciobase4" >
+<input type="number" name="preciobase03" id="preciobase3" >
 
-<input type="number" name="preciobase04" id="preciobase5" >
+<input type="number" name="preciobase04" id="preciobase4" >
 
 <!--  -->
 
 <label for="text">
 Unidades
 </label>
-<input type="number" name="unidades00" id="unidades" autofocus='autofocus' >
+<input type="number" name="unidades00" id="unidades00" autofocus='autofocus' >
 
-<input type="number" name="unidades01" id="unidades2" >
+<input type="number" name="unidades01" id="unidades1" >
 
-<input type="number" name="unidades02" id="unidades3" >
+<input type="number" name="unidades02" id="unidades2" >
 
-<input type="number" name="unidades03" id="unidades4" >
+<input type="number" name="unidades03" id="unidades3" >
 
-<input type="number" name="unidades04" id="unidades5" >
+<input type="number" name="unidades04" id="unidades4" >
 
 
 </div>
