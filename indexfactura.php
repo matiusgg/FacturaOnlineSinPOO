@@ -268,7 +268,7 @@ Comentario
 
 </article>
 <button type="submit">
-          Calcular
+          Enviar
       </button>
 
       <button type="reset">

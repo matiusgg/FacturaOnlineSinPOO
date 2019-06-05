@@ -59,10 +59,27 @@ for($i=0; $i < 5; $i++){
 
            // el print_r aqui te permite mostrar el contenido de un array, es mas comodo que en el echo por el tema del array
 // y el <pre> nos permite visulaizar mejor el contenido de print_r
+
+include('../index.php')
            
         echo'<pre>'; 
         print_r($precios);
         
         echo'</pre>';
+
+
+
+        
+        $login = [
+
+            'email' =>
+            'contraseña' =>
+
+        ];
+
+     
+
+
+
        
 

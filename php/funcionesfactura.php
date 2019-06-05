@@ -106,7 +106,14 @@ function irpf($subtotal, $irpf = 0.10){
 
  }
  
- 
+ function logincliente() {
+
+
+
+
+
+    
+ }
  
  ?>
 
